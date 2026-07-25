@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useState, type SyntheticEvent } from "react";
 import { useLocale } from "@/lib/i18n";
 import { Reveal } from "./Reveal";
 import { Stamp } from "./Stamp";
@@ -17,7 +17,7 @@ export function Contact() {
   const update = (key: keyof typeof values) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     setValues((v) => ({ ...v, [key]: e.target.value }));
 
-  const onSubmit = (e: FormEvent) => {
+  const onSubmit = (e: SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
     const nextErrors: Record<string, string> = {};
     if (!values.name.trim()) nextErrors.name = f.errorRequired;
@@ -48,11 +48,8 @@ export function Contact() {
     <section id="contact" className="border-t px-6 py-14 md:px-12 md:py-28" style={{ borderColor: "var(--color-rule)" }}>
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-[1fr_1.2fr] md:gap-16">
         <Reveal>
-          <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--color-stamp)" }}>
-            {t.contact.eyebrow}
-          </p>
           <h2
-            className="mt-4 text-balance font-[family-name:var(--font-display)] text-4xl font-medium leading-tight md:text-5xl"
+            className="text-balance font-[family-name:var(--font-display)] text-4xl font-medium leading-tight md:text-5xl"
             style={{ color: "var(--color-ink)" }}
           >
             {t.contact.heading}

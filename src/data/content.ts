@@ -2,32 +2,30 @@ export type Locale = "pl" | "en";
 
 const pl = {
   meta: {
-    title: "Biuro Rachunkowe GOZ — Poznań",
+    title: "Biuro Rachunkowe GOZ, Poznań",
     description:
-      "Biuro Rachunkowe GOZ — pełna księgowość, KPiR, ryczałt, kadry i płace. Na rynku od 2001 roku, świadectwo kwalifikacyjne Ministra Finansów nr 22010/01.",
+      "Biuro Rachunkowe GOZ. Pełna księgowość, KPiR, ryczałt, kadry i płace. Na rynku od 2001 roku, świadectwo kwalifikacyjne Ministra Finansów nr 22010/01.",
   },
   nav: {
     about: "O nas",
     services: "Usługi",
     pricing: "Cennik",
     contact: "Kontakt",
-    logoAria: "Biuro Rachunkowe GOZ — przewiń do góry",
+    logoAria: "Biuro Rachunkowe GOZ, przewiń do góry",
     themeToLight: "Włącz tryb jasny",
     themeToDark: "Włącz tryb ciemny",
     langSwitchTo: "English",
   },
   hero: {
     eyebrow: "Biuro Rachunkowe GOZ · Poznań",
-    heading: "Twoja księgowość, prowadzona jak należy — od 2001 roku",
-    body:
-      "Prężnie działające biuro rachunkowe obsługujące firmy krajowe i zagraniczne. Pełna księgowość, KPiR, ryczałt, kadry i płace — pod jednym, licencjonowanym dachem.",
+    heading: "Twoja księgowość, prowadzona jak należy.",
+    body: "Prężnie działające biuro rachunkowe obsługujące firmy krajowe i zagraniczne, pełna księgowość, KPiR, ryczałt, kadry i płace pod jednym dachem.",
     ctaPrimary: "Umów rozmowę",
     ctaSecondary: "Zobacz usługi",
     stampYear: "od 2001",
     stampLicense: "MF nr 22010/01",
   },
   about: {
-    eyebrow: "O nas",
     heading: "Świadectwo kwalifikacyjne. Dwadzieścia lat praktyki.",
     paragraphs: [
       "Jesteśmy Biurem Rachunkowym działającym na rynku finansowym od roku 2001, na podstawie posiadanego świadectwa kwalifikacyjnego Ministra Finansów nr 22010/01.",
@@ -40,7 +38,6 @@ const pl = {
     ],
   },
   services: {
-    eyebrow: "Usługi",
     heading: "Świadczymy następujące usługi z zakresu obsługi księgowej firm",
     items: [
       {
@@ -71,17 +68,14 @@ const pl = {
     ],
   },
   pricing: {
-    eyebrow: "Cennik",
     heading: "Wycena dopasowana do Twojej firmy",
-    body:
-      "Nie publikujemy sztywnego cennika — każda firma ma inną liczbę dokumentów, pracowników i formę opodatkowania. Napisz lub zadzwoń, a przygotujemy indywidualną wycenę w 24 godziny.",
+    body: "Nie publikujemy sztywnego cennika. Każda firma ma inną liczbę dokumentów, pracowników i formę opodatkowania. Napisz lub zadzwoń, a przygotujemy indywidualną wycenę w 24 godziny.",
     cta: "Poproś o wycenę",
     note: "Bez zobowiązań. Odpowiadamy tego samego dnia roboczego.",
   },
   contact: {
-    eyebrow: "Kontakt",
     heading: "Zapraszamy do naszego biura",
-    body: "Zostaw wiadomość, a otworzymy dla Ciebie gotową odpowiedź w skrzynce mailowej — albo zadzwoń bezpośrednio.",
+    body: "Zostaw wiadomość, a otworzymy dla Ciebie gotową odpowiedź w skrzynce mailowej. Możesz też zadzwonić bezpośrednio.",
     phoneLabel: "Telefon",
     phone: "+48 61 8244 074",
     emailLabel: "E-mail",
@@ -98,20 +92,19 @@ const pl = {
       message: "Wiadomość",
       messagePlaceholder: "Opisz krótko swoją firmę i czego potrzebujesz...",
       submit: "Wyślij wiadomość",
-      submitted: "Otwieramy Twój program pocztowy…",
+      submitted: "Otwieramy Twój program pocztowy",
       errorRequired: "To pole jest wymagane",
       errorEmail: "Podaj prawidłowy adres e-mail",
-      mailSubject: "Zapytanie ze strony — Biuro Rachunkowe GOZ",
+      mailSubject: "Zapytanie ze strony Biuro Rachunkowe GOZ",
     },
   },
   links: {
     eyebrow: "Przydatne linki",
-    heading: "Instytucje, z którymi współpracujemy na co dzień",
     items: [
       { label: "Ministerstwo Finansów", href: "https://www.gov.pl/web/finanse" },
       { label: "Zakład Ubezpieczeń Społecznych (ZUS)", href: "https://www.zus.pl" },
       { label: "Główny Urząd Statystyczny (GUS)", href: "https://stat.gov.pl" },
-      { label: "Urzędy Skarbowe — Poznań", href: "https://www.podatki.gov.pl" },
+      { label: "Urzędy Skarbowe w Poznaniu", href: "https://www.podatki.gov.pl" },
     ],
   },
   footer: {
@@ -122,32 +115,30 @@ const pl = {
 
 const en: typeof pl = {
   meta: {
-    title: "Biuro Rachunkowe GOZ — Poznań Accounting Office",
+    title: "Biuro Rachunkowe GOZ, Poznań Accounting Office",
     description:
-      "Biuro Rachunkowe GOZ — full bookkeeping, KPiR, flat-rate revenue accounting, payroll & HR. Operating since 2001, Ministry of Finance qualification certificate nr 22010/01.",
+      "Biuro Rachunkowe GOZ. Full bookkeeping, KPiR, flat-rate revenue accounting, payroll and HR. Operating since 2001, Ministry of Finance qualification certificate nr 22010/01.",
   },
   nav: {
     about: "About",
     services: "Services",
     pricing: "Pricing",
     contact: "Contact",
-    logoAria: "Biuro Rachunkowe GOZ — scroll to top",
+    logoAria: "Biuro Rachunkowe GOZ, scroll to top",
     themeToLight: "Switch to light mode",
     themeToDark: "Switch to dark mode",
     langSwitchTo: "Polski",
   },
   hero: {
     eyebrow: "Biuro Rachunkowe GOZ · Poznań, Poland",
-    heading: "Your bookkeeping, done properly — since 2001",
-    body:
-      "An established accounting office serving domestic and foreign companies. Full bookkeeping, KPiR, flat-rate accounting, payroll and HR — all under one licensed roof.",
+    heading: "Your bookkeeping, done properly.",
+    body: "An established accounting office serving local and foreign companies, full bookkeeping, KPiR, flat-rate accounting, payroll and HR under one roof.",
     ctaPrimary: "Book a call",
     ctaSecondary: "See services",
     stampYear: "since 2001",
     stampLicense: "MF no. 22010/01",
   },
   about: {
-    eyebrow: "About us",
     heading: "A Ministry of Finance certificate. Two decades of practice.",
     paragraphs: [
       "We are an accounting office operating in the financial market since 2001, under Ministry of Finance qualification certificate nr 22010/01.",
@@ -160,7 +151,6 @@ const en: typeof pl = {
     ],
   },
   services: {
-    eyebrow: "Services",
     heading: "The accounting services we provide",
     items: [
       {
@@ -189,17 +179,14 @@ const en: typeof pl = {
     ],
   },
   pricing: {
-    eyebrow: "Pricing",
     heading: "A quote fitted to your business",
-    body:
-      "We don't publish a fixed price list — every business differs by document volume, headcount, and tax regime. Get in touch and we'll prepare an individual quote within 24 hours.",
+    body: "We don't publish a fixed price list. Every business differs by document volume, headcount, and tax regime. Get in touch and we'll prepare an individual quote within 24 hours.",
     cta: "Request a quote",
     note: "No obligation. We reply the same business day.",
   },
   contact: {
-    eyebrow: "Contact",
     heading: "Get in touch with our office",
-    body: "Leave a message and we'll open a ready-to-send email in your inbox — or call us directly.",
+    body: "Leave a message and we'll open a ready-to-send email in your inbox. Or call us directly.",
     phoneLabel: "Phone",
     phone: "+48 61 8244 074",
     emailLabel: "Email",
@@ -216,20 +203,19 @@ const en: typeof pl = {
       message: "Message",
       messagePlaceholder: "Briefly describe your business and what you need...",
       submit: "Send message",
-      submitted: "Opening your mail client…",
+      submitted: "Opening your mail client",
       errorRequired: "This field is required",
       errorEmail: "Enter a valid email address",
-      mailSubject: "Website inquiry — Biuro Rachunkowe GOZ",
+      mailSubject: "Website inquiry, Biuro Rachunkowe GOZ",
     },
   },
   links: {
     eyebrow: "Useful links",
-    heading: "Institutions we work with every day",
     items: [
       { label: "Ministry of Finance", href: "https://www.gov.pl/web/finanse" },
       { label: "Social Insurance Institution (ZUS)", href: "https://www.zus.pl" },
       { label: "Central Statistical Office (GUS)", href: "https://stat.gov.pl" },
-      { label: "Tax Offices — Poznań", href: "https://www.podatki.gov.pl" },
+      { label: "Tax Offices in Poznań", href: "https://www.podatki.gov.pl" },
     ],
   },
   footer: {

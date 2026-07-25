@@ -10,11 +10,8 @@ export function About() {
     <section id="about" className="border-t px-6 py-14 md:px-12 md:py-28" style={{ borderColor: "var(--color-rule)" }}>
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--color-stamp)" }}>
-            {t.about.eyebrow}
-          </p>
           <h2
-            className="mt-4 max-w-2xl text-balance font-[family-name:var(--font-display)] text-4xl font-medium leading-tight md:text-5xl"
+            className="max-w-2xl text-balance font-[family-name:var(--font-display)] text-4xl font-medium leading-tight md:text-5xl"
             style={{ color: "var(--color-ink)" }}
           >
             {t.about.heading}

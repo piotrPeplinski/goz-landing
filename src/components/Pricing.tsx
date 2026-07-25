@@ -10,11 +10,8 @@ export function Pricing() {
     <section id="pricing" className="border-t px-6 py-14 md:px-12 md:py-28" style={{ borderColor: "var(--color-rule)" }}>
       <div className="mx-auto max-w-3xl text-center">
         <Reveal className="flex flex-col items-center">
-          <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--color-stamp)" }}>
-            {t.pricing.eyebrow}
-          </p>
           <h2
-            className="mt-4 text-balance font-[family-name:var(--font-display)] text-4xl font-medium leading-tight md:text-5xl"
+            className="text-balance font-[family-name:var(--font-display)] text-4xl font-medium leading-tight md:text-5xl"
             style={{ color: "var(--color-ink)" }}
           >
             {t.pricing.heading}

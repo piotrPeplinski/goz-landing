@@ -63,7 +63,7 @@ export function Nav() {
       }}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-12">
-        {/* Logo slot — reserved for client-supplied logo asset. Clicking scrolls to hero. */}
+        {/* Logo slot, reserved for client-supplied logo asset. Clicking scrolls to hero. */}
         <a
           href="#top"
           onClick={scrollToTop}

@@ -24,9 +24,9 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Biuro Rachunkowe GOZ — Poznań",
+  title: "Biuro Rachunkowe GOZ, Poznań",
   description:
-    "Biuro Rachunkowe GOZ — pełna księgowość, KPiR, ryczałt, kadry i płace. Na rynku od 2001 roku, świadectwo kwalifikacyjne Ministra Finansów nr 22010/01.",
+    "Biuro Rachunkowe GOZ. Pełna księgowość, KPiR, ryczałt, kadry i płace. Na rynku od 2001 roku, świadectwo kwalifikacyjne Ministra Finansów nr 22010/01.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

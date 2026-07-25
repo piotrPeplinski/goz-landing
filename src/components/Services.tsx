@@ -16,11 +16,8 @@ export function Services() {
     >
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--color-stamp)" }}>
-            {t.services.eyebrow}
-          </p>
           <h2
-            className="mt-4 max-w-2xl text-balance font-[family-name:var(--font-display)] text-4xl font-medium leading-tight md:text-5xl"
+            className="max-w-2xl text-balance font-[family-name:var(--font-display)] text-4xl font-medium leading-tight md:text-5xl"
             style={{ color: "var(--color-ink)" }}
           >
             {t.services.heading}
