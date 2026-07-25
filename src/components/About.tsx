@@ -7,7 +7,7 @@ export function About() {
   const { t } = useLocale();
 
   return (
-    <section id="about" className="border-t px-6 py-28 md:px-12" style={{ borderColor: "var(--color-rule)" }}>
+    <section id="about" className="border-t px-6 py-14 md:px-12 md:py-28" style={{ borderColor: "var(--color-rule)" }}>
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--color-stamp)" }}>
@@ -21,7 +21,7 @@ export function About() {
           </h2>
         </Reveal>
 
-        <div className="mt-14 grid grid-cols-1 gap-14 md:grid-cols-[1.3fr_1fr]">
+        <div className="mt-8 grid grid-cols-1 gap-10 md:mt-14 md:grid-cols-[1.3fr_1fr] md:gap-14">
           <Reveal delay={100}>
             <div className="space-y-5">
               {t.about.paragraphs.map((p, i) => (

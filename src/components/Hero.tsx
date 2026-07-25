@@ -28,7 +28,7 @@ export function Hero() {
       id="top"
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
-      className="relative flex min-h-screen items-center overflow-hidden pt-28 pb-20"
+      className="relative flex min-h-screen items-center overflow-hidden pt-24 pb-12 md:pt-28 md:pb-20"
     >
       <div className="ledger-grid hero-grid-wipe pointer-events-none absolute inset-0" aria-hidden />
 
@@ -50,10 +50,10 @@ export function Hero() {
             {t.hero.eyebrow}
           </p>
           <h1
-            className="text-balance font-[family-name:var(--font-display)] text-5xl font-medium leading-[1.05] tracking-tight md:text-7xl"
+            className="hero-ink-reveal text-balance font-[family-name:var(--font-display)] text-5xl font-medium leading-[1.05] tracking-tight md:text-7xl"
             style={{ color: "var(--color-ink)" }}
           >
-            <span className="hero-ink-reveal">{t.hero.heading}</span>
+            {t.hero.heading}
           </h1>
           <p
             className="hero-rise-in mt-6 max-w-xl text-lg leading-relaxed md:text-xl"

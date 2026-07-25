@@ -11,12 +11,12 @@ export function Footer() {
   };
 
   return (
-    <footer className="border-t px-6 py-14 md:px-12" style={{ borderColor: "var(--color-rule)" }}>
+    <footer className="border-t px-6 py-10 md:px-12 md:py-14" style={{ borderColor: "var(--color-rule)" }}>
       <div className="mx-auto max-w-6xl">
-        <p className="mb-8 font-mono text-xs font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--color-stamp)" }}>
+        <p className="mb-6 font-mono text-xs font-semibold uppercase tracking-[0.14em] md:mb-8" style={{ color: "var(--color-stamp)" }}>
           {t.links.eyebrow}
         </p>
-        <ul className="mb-14 flex flex-wrap gap-x-8 gap-y-3">
+        <ul className="mb-8 flex flex-wrap gap-x-8 gap-y-3 md:mb-14">
           {t.links.items.map((link) => (
             <li key={link.href}>
               <a

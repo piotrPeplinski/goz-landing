@@ -7,7 +7,7 @@ export function Pricing() {
   const { t } = useLocale();
 
   return (
-    <section id="pricing" className="border-t px-6 py-28 md:px-12" style={{ borderColor: "var(--color-rule)" }}>
+    <section id="pricing" className="border-t px-6 py-14 md:px-12 md:py-28" style={{ borderColor: "var(--color-rule)" }}>
       <div className="mx-auto max-w-3xl text-center">
         <Reveal className="flex flex-col items-center">
           <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--color-stamp)" }}>

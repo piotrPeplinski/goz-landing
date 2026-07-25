@@ -45,8 +45,8 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="border-t px-6 py-28 md:px-12" style={{ borderColor: "var(--color-rule)" }}>
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-16 md:grid-cols-[1fr_1.2fr]">
+    <section id="contact" className="border-t px-6 py-14 md:px-12 md:py-28" style={{ borderColor: "var(--color-rule)" }}>
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-[1fr_1.2fr] md:gap-16">
         <Reveal>
           <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--color-stamp)" }}>
             {t.contact.eyebrow}

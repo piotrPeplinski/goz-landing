@@ -2,7 +2,6 @@
 
 import { useLocale } from "@/lib/i18n";
 import { Reveal } from "./Reveal";
-import { TiltCard } from "./TiltCard";
 
 const icons = [BookIcon, LedgerIcon, ReceiptIcon, PeopleIcon, StarIcon];
 
@@ -12,7 +11,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="border-t px-6 py-28 md:px-12"
+      className="border-t px-6 py-14 md:px-12 md:py-28"
       style={{ borderColor: "var(--color-rule)", backgroundColor: "color-mix(in oklab, var(--color-rule) 25%, var(--color-paper))" }}
     >
       <div className="mx-auto max-w-6xl">
@@ -28,31 +27,32 @@ export function Services() {
           </h2>
         </Reveal>
 
-        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 flex flex-wrap justify-center gap-5 md:mt-14">
           {t.services.items.map((item, i) => {
             const Icon = icons[i % icons.length];
             return (
-              <Reveal key={item.title} delay={i * 80} variant="flip" className="[perspective:1200px]">
-                <TiltCard maxTilt={7} lift={10} className="tilt-shadow h-full rounded-[8px] border p-7" style={{ borderColor: "var(--color-rule)", backgroundColor: "var(--color-card)" }}>
+              <Reveal
+                key={item.title}
+                delay={i * 80}
+                className="w-full sm:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.834rem)]"
+              >
+                <div
+                  className="lift-shadow h-full rounded-[8px] border p-7"
+                  style={{ borderColor: "var(--color-rule)", backgroundColor: "var(--color-card)" }}
+                >
                   <div
-                    className="mb-5 grid h-10 w-10 place-items-center rounded-[6px] border"
-                    style={{ borderColor: "var(--color-stamp)", color: "var(--color-stamp)", transform: "translateZ(24px)" }}
+                    className="mb-5 grid h-10 w-10 place-items-center rounded-[6px] border transition-colors duration-300"
+                    style={{ borderColor: "var(--color-stamp)", color: "var(--color-stamp)" }}
                   >
                     <Icon />
                   </div>
-                  <h3
-                    className="text-lg font-semibold"
-                    style={{ color: "var(--color-ink)", transform: "translateZ(16px)" }}
-                  >
+                  <h3 className="text-lg font-semibold" style={{ color: "var(--color-ink)" }}>
                     {item.title}
                   </h3>
-                  <p
-                    className="mt-2.5 text-sm leading-relaxed"
-                    style={{ color: "var(--color-ink-muted)", transform: "translateZ(8px)" }}
-                  >
+                  <p className="mt-2.5 text-sm leading-relaxed" style={{ color: "var(--color-ink-muted)" }}>
                     {item.description}
                   </p>
-                </TiltCard>
+                </div>
               </Reveal>
             );
           })}
