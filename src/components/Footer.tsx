@@ -37,6 +37,17 @@ export function Footer() {
           style={{ borderColor: "var(--color-rule)", color: "var(--color-ink-muted)" }}
         >
           <p className="font-figure">© {new Date().getFullYear()} Biuro Rachunkowe GOZ · {t.footer.rights}</p>
+          <p className="text-xs">
+            Designed &amp; Developed by{" "}
+            <a
+              href="https://www.linkedin.com/in/peplinski/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-ink underline-offset-4 transition-colors hover:text-stamp hover:underline"
+            >
+              Piotr Pepliński
+            </a>
+          </p>
           <a href="#top" onClick={scrollToTop} className="font-mono text-xs uppercase tracking-[0.08em] transition-colors hover:text-[color:var(--color-stamp)]">
             {t.footer.backToTop} ↑
           </a>
